@@ -25,17 +25,24 @@ img {
 .grid {
   margin: 0 auto;
   max-width: 980px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
 }
 
 nav {
   background-color: black;
   padding: 0.5em;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav a {
@@ -44,39 +51,17 @@ nav a {
   padding: 0.5em 1em;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-
 .photos {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.feature {
-  width: 200px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 20px;
-}
-
-.photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
 }
 
 .feature {
+  width: 200px;
   float: left;
   margin: 8px 30px 20px 0;
 }
