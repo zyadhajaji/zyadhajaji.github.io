@@ -63,3 +63,20 @@ nav ul {
 .feature {
   width: 200px;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.feature {
+  float: left;
+  margin: 8px 30px 20px 0;
+}
