@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<!--
+Name: Zyad Hajaji
+File: index.html
+Date: 29 July 2026
+Silly story generator for Assignment 4 Part 1.
+This file combines those HTML + CSS snippets into one local index.html
+and links main.js with <script src="main.js"></script>.
+-->
+
+  <meta name="viewport" content="width=device-width">
+  <title>Silly story generator</title>
+
+  <style>
+    body {
+      font: 1.2em / 1.5 system-ui;
+      margin: 0 auto;
+      width: 500px;
+    }
+    fieldset {
+      border: 0;
+    }
+    fieldset,
+    legend {
+      padding: 0;
+      margin: 0;
+    }
+    input[type="text"] {
+      margin-top: 5px;
+      padding: 5px;
+      width: 50%;
+      display: block;
+    }
+    div,
+    fieldset {
+      margin-top: 20px;
+    }
+    p {
+      margin-top: 10px;
+      background: #ffc125;
+      padding: 20px;
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <label for="custom-name">Enter custom name:</label>
+    <input id="custom-name" type="text" placeholder="" />
+  </div>
+  <fieldset>
+    <legend>Choose locale:</legend>
+    <label for="us">US</label
+    ><input id="us" type="radio" name="uk-us" value="us" checked />
+    <label for="uk">UK</label
+    ><input id="uk" type="radio" name="uk-us" value="uk" />
+  </fieldset>
+  <div>
+    <button class="generate">Generate random story</button>
+  </div>
+  <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+  <p class="story"></p>
+
+  <script src="main.js"></script>
+</body>
+</html>
