@@ -36,6 +36,7 @@ for (const image of images) {
   thumbBar.appendChild(newImage);
   newImage.addEventListener("click", updateDisplayedImage);
 }
+
 btn.addEventListener("click", () => {
   if (btn.classList.contains("dark")) {
     btn.textContent = "Lighten";
